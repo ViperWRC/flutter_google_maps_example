@@ -8,7 +8,7 @@ class MapRepository{
     return API.getRouteCoordinates({
       'origin': '${l1.latitude},${l1.longitude}',
       'destination': '${l2.latitude},${l2.longitude}',
-      'key': Application.GOOGLE_MAPS_API_KEY,
+      'key': Application.accessToken,
     });
   }
 }
